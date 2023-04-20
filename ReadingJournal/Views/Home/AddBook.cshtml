@@ -1,0 +1,26 @@
+﻿@model BookViewModel
+
+<h3>Add Book</h3>
+
+<form asp-controller="Home" asp-action="AddBook">
+    <label class="form-control-label" asp-for="Title"></label>
+    <input class="form-control" asp-for="Title">
+
+    <label class="form-control-label" asp-for="Author"></label>
+    <input class="form-control" asp-for="Author">
+
+    <label class="form-control-label" asp-for="Genre"></label>
+    <input class="form-control" asp-for="Genre">
+
+    <label class="form-control-label" asp-for="PictureURL"></label>
+    <input class="form-control" asp-for="PictureURL">
+
+    <label class="form-control-label" asp-for="Description"></label>
+    <textarea class="form-control" asp-for="Description"></textarea>
+
+    <label class="form-control-label" asp-for="PublishDate"></label>
+    <input class="form-control" asp-for="PublishDate" type="date">
+
+    <br/>
+    <button class="btn btn-primary">Add Book</button>
+</form>

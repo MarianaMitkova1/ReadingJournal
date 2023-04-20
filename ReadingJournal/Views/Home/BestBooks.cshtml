@@ -1,0 +1,12 @@
+﻿@model BookViewModelList
+
+<h3>Books with rating 5 of 5</h3>
+
+<ul class ="list-group">
+    @foreach (var item in Model.List)
+    {
+        <li class="list-group-item">
+            <a target="_blank" href="/Home/BookDetails?bookId=@item.Id">@item.Title by @item.Author</a>
+        </li>
+    }
+</ul>
