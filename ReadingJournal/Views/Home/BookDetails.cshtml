@@ -170,15 +170,7 @@ else
                 alert('Review added successfully!');
 
                 window.location.reload();
-
-                $('#myModal').modal('hide');
-
-                document.getElementById("firstName").value = '';
-                document.getElementById("comment").value = '';
-                document.querySelector('input[name="rating"]:checked').checked = false;
-            } else {
-                alert('There was an error adding the review. Please try again.');
-            }
+            } 
         }).catch(function (error) {
             alert('There was an error adding the review. Please try again.');
         });
